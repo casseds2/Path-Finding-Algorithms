@@ -1,3 +1,5 @@
 module.exports = {
-  publicPath: '/Path-Finding-Algorithms/'
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/Path-Finding-Algorithms/'
+    : '/'
 }
